@@ -193,7 +193,7 @@ public class App {
         for (int row = 0; row < ROW ; row++) {
             String seats = availabilities.get(row) + OCCUPIED;  // Ideiglenesen tegyünk egy foglalt helyet a sor végére!
             int counter = 0;
-            for (int column = 0; column < COLUMN; column++) {
+            for (int column = 0; column <= COLUMN; column++) {
                 if (seats.charAt(column) == OCCUPIED) {     // Ha az adott szék foglalt, akkor
                     if (counter == 1) {                     //    Ha a `counter` számláló értéke 1, akkor
                         uniqueSeats++;                      //    egyedülálló üres szék volt -> (uniqueSeats értékének növelése)
