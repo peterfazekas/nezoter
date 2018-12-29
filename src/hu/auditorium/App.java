@@ -136,7 +136,7 @@ public class App {
         for (int row = 0; row < ROW ; row++) {
             String seats = availabilities.get(row) + OCCUPIED;
             int counter = 0;
-            for (int column = 0; column < COLUMN; column++) {
+            for (int column = 0; column <= COLUMN; column++) {
                 if (seats.charAt(column) == OCCUPIED) {
                     if (counter == 1) {
                         uniqueSeats++;
